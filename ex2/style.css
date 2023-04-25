@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: normal, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(76, 76, 236, 0.938);
+
+}
+img{
+    height: auto;
+    width: 10rem;
+    margin-top: 0.5rem;
+    border-radius: 6rem;
+}
+section{
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    height: 6rem;
+    width: 10rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0rem 5rem 5rem 5rem;
+    box-shadow: 5px 5px 5px black;
+    border-color: white;
+    border-width: 1px;
+}
+footer{
+    color: white;
+    margin-top: 1px;
+}
