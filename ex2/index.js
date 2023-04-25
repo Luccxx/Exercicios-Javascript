@@ -1,10 +1,10 @@
 function carregar(){
-    //var data = new Date();
+    var data = new Date();
     var label_hora = window.document.getElementById('label');
     var body = document.body;
     var titulo = document.getElementById('titulo')
     var img = document.getElementById('img');
-    var hora_atual = 17;
+    var hora_atual = data.getHours();
     label_hora.innerHTML = `A hora atual é: ${hora_atual}:00`;
     if (hora_atual >0 && hora_atual <12) {
         titulo.innerHTML = "Bom Dia!"
