@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div class="ano_nasc">
+            <label for="number">Ano de Nascimento: </label>
+            <input type="number" name="idade" id="idade" min="0"><!--min que pode ser inserido é zero-->
+            <p>
+                <label for="sexo" >Sexo: </label>
+
+                <input type="radio" name="radsex" id="masculino" required><!--Ambos nomes terão que serem iguais para poder ser escolhi apenas um-->
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="radsex" id="feminino" required>
+                <label for="feminino">Feminino</label>
+            </p>
+            
+            <button type="submit" onclick="idades()">Verificar</button>
+        </div>
+        <div class="img">
+            <p id="texto">Insira algo para comerçamos</p>
+            <img src="" id="img">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em vídeo</p><!--&copy para colocor Copyrith-->
+    </footer>
+</body>
+</html>

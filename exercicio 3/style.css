@@ -1,0 +1,29 @@
+*{
+    font: normal, 300pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    color: white;
+    background-color: rgb(145, 15, 15);
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 5px 10px 10px black;
+    border-radius: 10px;
+}
+button{
+    margin-left: 8rem;
+}
+.img{
+    text-align: center;
+}
+img{
+    height: auto;
+    width: 10rem;
+}
