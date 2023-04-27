@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font: normal, 25pt;
+        }
+
+        body{
+            background-image: url("brasil.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px 800px;
+            text-align: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        button{
+            margin-top: 1rem;
+            padding: 5px 5px 5px 5px;
+        }
+        input{
+            text-align: center;
+        }
+        .div{
+            margin-top: 1rem;
+            font-size: 25pt;
+        }
+        img{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 10px;
+        }
+
+    </style>
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Detector de Nacionalidade</h1>
+    <p>
+        Selecione o seu país: <input type="text" name="txtPS" id="idPS">
+    </p>
+    <button id="button_result" type="submit">Detectar</button>
+    <div id="txtResultado" class="div">
+    </div>
+
+    <script>
+        var area = document.getElementById('txtResultado')
+        var button = document.getElementById('button_result')
+        
+        button.addEventListener('click', result)
+
+        function result(){
+            var pais = document.getElementById('idPS');
+            var valor_pais = pais.value
+            if (valor_pais == "Brasil") {
+                area.innerHTML = "Você é brasileiro!"
+            }else{
+                area.innerHTML = "Você é estrangeiro!"
+            }
+        }
+
+    </script>
+</body>
+</html>
