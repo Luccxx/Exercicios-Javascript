@@ -1,0 +1,48 @@
+*{
+    border: 1;
+    margin: 0;
+    padding: 0;
+    font: 100 28pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    font-size: 20pt;
+}
+section{
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 1rem;
+    background: linear-gradient(to left, blue, rgb(26, 73, 175));
+    border-radius: 10px;
+}
+input, p{
+    font-size: 17pt;
+}
+p{
+    color: white
+}
+input{
+    text-align: center;
+}
+button{
+    font-size: 15pt;
+    padding: 2.5px;
+}
+select{
+    padding: 1rem;
+    text-align: justify;
+    margin: 1rem 0rem 0rem 9rem;
+    height: auto;
+    width: 12rem;
+    font-size: 12pt;
+}
+footer{
+    margin-top: 1rem;
+}
