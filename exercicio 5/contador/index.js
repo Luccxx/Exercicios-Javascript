@@ -15,7 +15,7 @@ function index(){
     let valorpasso = Number(passo.value)
     
     let resultado = document.querySelector("div#result")
-    //let a = valorn1 + valorpasso
+    
     if(n1.value.length == 0 || n2.value.length == 0 || passo.value.length == 0){
         alert("Digite algum número para começar")
     }else if(n1.value < 0 || n2.value < 0 || passo.value < 0){
